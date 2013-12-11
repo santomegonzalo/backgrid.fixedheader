@@ -1,0 +1,12 @@
+.backgrid-fixed-content {
+	height: 100%;
+	overflow: auto;
+}
+
+.backgrid-fixed-header {
+	overflow: hidden;
+	height: 30px;
+	position: absolute;
+	margin-top: 0px;
+	width: auto;
+}
