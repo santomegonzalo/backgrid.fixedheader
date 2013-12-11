@@ -94,6 +94,10 @@
 				var left = $element.scrollLeft();
 				
 				settings.container.find('.backgrid-fixed-header').css('margin-left', -Math.abs(left));
+				
+				if( settings.container.find('.backgrid-fixed-content').scrollTop() >= settings.container.find('.backgrid-fixed-content').find('.backgrid').height() - settings.container.find('.backgrid-fixed-content').height() - 100) {
+					$.event.trigger('BackgridContainer:scrollEnd');
+				}
 			},
 			_resize: function(evt) {
 				var width = settings.container.find('.backgrid-fixed-content').find('.backgrid').width();
